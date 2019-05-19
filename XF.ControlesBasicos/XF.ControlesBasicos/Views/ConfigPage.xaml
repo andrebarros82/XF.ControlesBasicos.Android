@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.ControlesBasicos.Views.ConfigPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout Direction="Column">
+                <Label Text="Privacidade" TextColor="#FF0266" Margin="20,12,0,0" />
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#FF0266" Margin="0,14,0,0" />
+            </FlexLayout>
+            <StackLayout Orientation="Horizontal" Margin="20,10,0,0">
+                <Label Text="Aceita receber e-mail?" Margin="0,3,0,0" />
+                <Switch x:Name="SwitchEmail" IsToggled="True" HorizontalOptions="FillAndExpand" Toggled="Switch_Toggled" />
+            </StackLayout>
+            <StackLayout>
+                <Entry x:Name="EntryEmail" Placeholder="Inforne seu e-mail" Margin="18,14,20,0" HorizontalOptions="FillAndExpand" TextChanged="EntryEmail_TextChanged" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
